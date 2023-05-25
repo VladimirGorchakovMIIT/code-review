@@ -1,25 +1,19 @@
 public class Calculator {
     public int add(int a, int b){
-        int c = a+b;
-        return c;
+        return a+b;
     }
     public int dif(int a, int b){
-        int c = a-b;
-        return c;
+        return a-b;
     }
     public int div(int a, int b){
-        int c = a/b;
-        return c;
+        return a/b;
     }
     public int times(int a, int b){
-        int c = a*b;
-        return c;
+        return a*b;
     }
-    public int solver(int n){ //factorial
-        int c = 1;
-        for (int i = 1; i <= n; i++){
-            c = times(c,i);
-        }
-        return c;
+
+    //Pythagorean theorem
+    public int solver(int a, int b){
+        return (int) Math.sqrt(add(times(a,a), times(b,b)));
     }
 }
